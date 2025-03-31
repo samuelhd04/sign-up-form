@@ -88,17 +88,31 @@ a:visited {
 .message p {
   margin: 0;
   box-sizing: border-box;
-  padding: 5px;
+  padding: 20px 20% 50px 45px;
   font-family: Helvetica, Arial, sans-serif;
-  /* font-size: 2rem;
-  font-weight: 600; */
+  font-weight: 550;
+  font-size: 1.5rem;
+}
+
+.form-title {
+  margin: 0;
+  padding: 20px 40px 0px 45px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 550;
 }
 
 .form {
   flex: 1;
 }
 
+.form label {
+  display: block;
+}
+
 .buttons {
   background-color: bisque;
   flex: 1.1;
+}
+
+.buttons p {
 }
