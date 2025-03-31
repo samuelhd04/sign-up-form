@@ -94,19 +94,62 @@ a:visited {
   font-size: 1.5rem;
 }
 
+.middle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .form-title {
+  flex: 0 1 0;
   margin: 0;
-  padding: 20px 40px 0px 45px;
+  padding: 20px 40px 20px 45px;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 550;
+  font-size: 1.5rem;
+  opacity: 0.9;
 }
 
 .form {
   flex: 1;
+  padding: 0px 25% 30px 45px;
+  display: flex;
+  gap: 70px;
 }
 
 .form label {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
   display: block;
+}
+
+.form input {
+  width: 250px;
+  height: 25px;
+  margin-top: 2px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.form input:valid {
+  border: 1px solid green;
+}
+
+.first-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.second-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .buttons {
@@ -114,5 +157,26 @@ a:visited {
   flex: 1.1;
 }
 
+.buttons button {
+  background-color: #596d48;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+  margin: 35px 0px 0px 45px;
+}
+
 .buttons p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  opacity: 0.8;
+  margin: 35px 0px 0px 45px;
+}
+
+.buttons a {
+  color: #596d48;
+  text-decoration: none;
 }

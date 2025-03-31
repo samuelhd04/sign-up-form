@@ -42,29 +42,45 @@
           You know you want to.
         </p>
       </div>
-      <p class="form-title">Let's do this!</p class="form-title">
-      <form class="form">
-        <label>first name</label>
-        <input type="text" />
+      <div class="middle">
+        <p class="form-title">Let's do this!</p>
+        <form class="form" id="a-form">
+          <div class="first-col">
+            <div>
+              <label>first name</label>
+              <input type="text" required />
+            </div>
+            <div>
+              <label>email</label>
+              <input type="text" required />
+            </div>
+            <div>
+              <label>password</label>
+              <input type="text" required />
+            </div>
+          </div>
 
-        <label>last name</label>
-        <input type="text" />
+          <div class="second-col">
+            <div>
+              <label>last name</label>
+              <input type="text" required />
+            </div>
+            <div>
+              <label>phone number</label>
+              <input type="text" required />
+            </div>
 
-        <label>email</label>
-        <input type="text" />
+            <div>
+              <label>confirm password</label>
+              <input type="text" required />
+            </div>
+          </div>
+        </form>
+      </div>
 
-        <label>phone number</label>
-        <input type="text" />
-
-        <label>password</label>
-        <input type="text" />
-
-        <label>confirm password</label>
-        <input type="text" />
-      </form>
       <div class="buttons">
-        <button>Create Account</button>
-        <p>Already have an account? Log in</p>
+        <button type="submit" form="a-form">Create Account</button>
+        <p>Already have an account? <a href="">Log in</a></p>
       </div>
     </div>
   </body>
